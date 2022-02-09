@@ -112,10 +112,10 @@ URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs
 
 ## Demo Video
 
-URL: https://drive.google.com/file/d/1u5mHOd3V9vxg5H6P2h63ZqUHikj53ZNX/view?usp=sharing
+URL: https://drive.google.com/file/d/1N8bBRraHxz_jyMf1ZEgn_ZWQ3vg4r806/view?usp=sharing
 	
-https://user-images.githubusercontent.com/92749977/150366444-d137e97c-2097-447a-b969-c5e1f9649ce8.mp4
+https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/screen%20shots/Demo%20video.mp4
 
 ## Author
 
-Oviyashri B [LinkedIn](https://www.linkedin.com/in/oviyashri-balasubramaniam)
+Yuvraj Verma [LinkedIn](https://www.linkedin.com/in/yuvraj-verma-334000186/)
