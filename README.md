@@ -75,7 +75,7 @@ Finally when we get all the prediction for client data, then our final task is t
 
 ## Web Deployment
 
-Thyroid disease detection Web App: https://thyroid-disease-prediction-api.herokuapp.com
+Thyroid disease detection Web App: https://thyroid-disease-detection-api.herokuapp.com
 
 ## Screenshots
 **UI:**
@@ -92,23 +92,23 @@ Thyroid disease detection Web App: https://thyroid-disease-prediction-api.heroku
 
 ## High Level Design 
 
-URL: https://github.com/Oviyashri/Thyroid_disorder_prediction/blob/main/docs/HDD.pdf
+URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs/HDD.pdf
 
 ## Low Level Design
 
-URL: https://github.com/Oviyashri/Thyroid_disorder_prediction/blob/main/docs/LLD.pdf
+URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs/LLD.pdf
 
 ## Architecture
 
-URL: https://github.com/Oviyashri/Thyroid_disorder_prediction/blob/main/docs/Architecture.pdf
+URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs/Architecture.pdf
 
 ## Detailed Project Report
 
-URL: https://github.com/Oviyashri/Thyroid_disorder_prediction/blob/main/docs/DPR.pdf
+URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs/DPR.pdf
 
 ## Wireframe
 
-URL: https://github.com/Oviyashri/Thyroid_disorder_prediction/blob/main/docs/Wireframe.pdf
+URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs/Wireframe.pdf
 
 ## Demo Video
 
