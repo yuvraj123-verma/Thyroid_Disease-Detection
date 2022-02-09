@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang=''>
+<head>
+<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <style>
+    body 
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+   <link rel="stylesheet"
+   href= "static/styles/styles1.css">
+</head>
+
+<title>Thyroid Disease Prediction</title>
+<!--<body>-->
+<body background="2059786.jpg">
+<div id='cssmenu'>
+<ul>
+<li><img  style="height:7vh; padding-right:4px;padding-left:4px;" src="static/images/icon.png" ></li>
+<li><label style="height:7vh;padding-right:4px;font-size:28px;font-weight:bold;margin-top:5px;
+padding-top:4px;">Detector</label></li>
+  <li><a href="/index">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li class="active"><a href="/form">Analyse your test report</a></li>
+</ul>
+</div>
+<center>
+    <h1 style="font-size: 40px; color: rgb(135,206,250); text-align: center;"> Thyroid Disease Prediction</h1>
+</center>
+<p style="font-size: 40px; color: rgb(135,206,250);">Thyroid Problems</p>
+<p style="font-size:18px;">
+Through the hormones it produces, the thyroid gland influences almost all of the metabolic processes in your body. Thyroid disorders can range from a small, harmless goiter (enlarged gland) that needs no treatment to life-threatening cancer. The most common thyroid problems involve abnormal production of thyroid hormones. Too much thyroid hormone results in a condition known as hyperthyroidism. Insufficient hormone production leads to hypothyroidism.Although the effects can be unpleasant or uncomfortable, most thyroid problems can be managed well if properly diagnosed and treated.</p>
+
+
+<center>
+
+        <h2 style="font-size:25px; color: rgb(135,206,250)">This web application is made to predict Thyroid disease with the following parameters given</h2>
+        <p style="font-size: large; font-family:'Times New Roman'; background-color: rgb(136, 215, 247);">Fill the form and get your results</p> <br>
+        <div class="container" style = "background-color: rgb(144,238,144);">
+            <form method='POST', action="{{url_for('prediction')}}">
+              <div class="row g-3">
+                  <div class="col">
+<!--                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">-->
+                      <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top:10px" for="TSH">TSH value:</label>
+                      <input style="margin-top:5px" class="form-control" type="number" name="TSH" placeholder="enter" step="any">
+                  </div>
+                  <div class="col">
+<!--                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">-->
+                      <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top:10px" for="FTI">FTI value:</label>
+                      <input style="margin-top:5px" class="form-control" type="number" name="FTI" placeholder="enter" step="any">
+                  </div>
+              </div>
+
+              <div class="row g-3">
+                  <div class="col">
+<!--                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">-->
+                      <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top:10px" for="TT4">TT4 value:</label>
+                      <input style="margin-top:5px" class="form-control" type="number" name="TT4" placeholder="enter" step="any">
+                  </div>
+                  <div class="col">
+<!--                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">-->
+                      <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top:10px" for="T3">T3 value:</label>
+                      <input style="margin-top:5px" class="form-control" type="number" name="T3" placeholder="enter" step="any">
+                  </div>
+              </div>
+              <div class="row g-3">
+                  <div class="col">
+                        <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top: 10px" for="query_hypothyroid">Query_hypothyroid value :</label>
+                        <select id="query_hypothyroid" name="query_hypothyroid" style="padding:5px 15px;margin-top: 5px;">
+                        <option value="text">Select</option>
+                        <option value="1">True</option>
+                        <option value="0">False</option></select>
+                  </div>
+                  <div class="col">
+                        <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top: 10px" for="on_thyroxine">on_thyroxine value:</label>
+                        <select id="on_thyroxine" name="on_thyroxine" style="padding:5px 15px;margin-top: 5px;">
+                        <option value="text">Select</option>
+                        <option value="1">True</option>
+                        <option value="0">False</option></select>
+                  </div>
+              </div>
+              <div class="row g-3">
+                  <div class="col">
+                        <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top: 10px" for="sex">Sex :</label>
+                        <select id="sex" name="sex" style="padding:5px 15px;margin-top: 5px;">
+                        <option value="text">Select</option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option></select>
+                  </div>
+                  <div class="col">
+                        <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top: 10px" for="pregnant">Pregnant :</label>
+                        <select id="pregnant" name="pregnant" style="padding:5px 15px;margin-top: 5px;">
+                        <option value="text">Select</option>
+                        <option value="1">True</option>
+                        <option value="0">False</option></select>
+                  </div>
+              </div>
+              <div class="form-group" style="margin-left: 200px; margin-right: 200px;">
+                    <label style="background-color: rgb(135,206,250); padding:5px 15px; margin-top: 5px" for="psych">Psych :</label>
+                    <select id="psych" name="psych" style="padding:5px 15px;margin-top: 5px;">
+                    <option value="text">Select</option>
+                    <option value="1">True</option>
+                    <option value="0">False</option></select>
+              </div>
+                <div class="col-md-2 form-group" style="text-align: center">
+                    <button class="btn form-control" style="font-size: larger; background-color: rgb(135,206,250); padding: 5px 15px;margin-top: 15px;" onclick="send_data()">Predict</button>
+                </div>
+                <input type="reset" value='Reset' style="padding: 5px 15px;margin-top: 15px;">
+            </form>
+        </div>
+
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+</html>

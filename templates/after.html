@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet"
+   href= "static/styles/styles1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background-image:url(static/images/1.jpg);
+        font-family: "Poppins", sans-serif;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    .content{
+        margin-top: 200px;
+    }
+</style>
+<body>
+<div id='cssmenu'>
+<ul>
+<li><img  style="height:7vh; padding-right:4px;padding-left:4px;" src="static/images/icon.png" ></li>
+<li><label style="height:7vh;padding-right:4px;font-size:28px;font-weight:bold;margin-top:5px;
+padding-top:4px;">Detector</label></li>
+  <li><a href="/index">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/form">Analyse your test report</a></li>
+</ul>
+</div>
+    <center class="content">
+
+        <h1 style="font-size: 40px; color: rgb(9, 9, 156); text-align: center;">Prediction Result</h1>
+
+     {%if data == 0%}
+     <h1>Your values are Normal &#128522;</h1>
+
+     {%elif data == 1%}
+     <h1>Values shows that patient has Hypothyroidism.</h1>
+
+     {%endif%} 
+
+    </center>
+
+</body>
+</html>
