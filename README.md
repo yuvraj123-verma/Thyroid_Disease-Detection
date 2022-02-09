@@ -113,8 +113,6 @@ URL: https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/docs
 ## Demo Video
 
 URL: https://drive.google.com/file/d/1N8bBRraHxz_jyMf1ZEgn_ZWQ3vg4r806/view?usp=sharing
-	
-https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/screen%20shots/Demo%20video.mp4
 
 ## Author
 
