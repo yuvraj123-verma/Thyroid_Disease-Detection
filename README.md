@@ -80,13 +80,13 @@ Thyroid disease detection Web App: https://thyroid-disease-detection-api.herokua
 ## Screenshots
 **UI:**
 
-![image1](https://user-images.githubusercontent.com/92749977/150357887-4491993b-6478-412d-9aa2-3bf9e8429602.jpg)
+![image1](https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/screen%20shots/tdd%20form.png)
 
 **Prediction:**
 
-![image3](https://user-images.githubusercontent.com/92749977/150358057-2cc5bf3f-0c56-49a0-8b35-9f3c49c440a2.jpg)
+![image3](https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/screen%20shots/predict.png)
 
-![image4](https://user-images.githubusercontent.com/92749977/150359302-65ddd462-9fe6-40bb-b139-365c1f02286c.jpg)
+![image4](https://github.com/yuvraj123-verma/Thyroid_Disease-Detection/blob/main/screen%20shots/normal.png)
 
 ## Project Documents
 
